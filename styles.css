@@ -363,4 +363,10 @@ html, body {
   .footer-meta {
     text-align: left;
   }
+  .crest-placeholder img.crest-image {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  border-radius: 50%;
+}
 }
