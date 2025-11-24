@@ -76,8 +76,8 @@ html, body {
 }
 
 .crest-placeholder {
-  width: 44px;
-  height: 44px;
+  width: 100px;
+  height: 100px;
   border-radius: 999px;
   border: 2px solid var(--hydrogen);
   display: flex;
