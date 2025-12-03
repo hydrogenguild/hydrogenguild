@@ -80,19 +80,20 @@ html, body {
 /* --------------------------- */
 
 .crest-placeholder {
-  width: 72px;
+  width: 82px;
   height: 72px;
   border-radius: 999px;
-  border: 2px solid var(--hydrogen);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: radial-gradient(circle at 30% 30%, #ffffff, var(--accent-soft));
+  padding: 2px; /* space for gold ring */
+
+  background: radial-gradient(circle at 30% 30%, #ffffff, var(--accent-soft)),
+              linear-gradient(135deg, #f6e27a, #d4af37, #b88a31);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
 }
 
 .crest-placeholder img.crest-image {
-  width: 70px;
-  height: 70px;
+  width: 80px;
+  height: 80px;
   object-fit: contain;
   border-radius: 50%;
 }
