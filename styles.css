@@ -76,26 +76,31 @@ html, body {
 }
 
 /* --------------------------- */
-/*     UPDATED CREST SIZE      */
+/*     PERFECT CIRCLE CREST    */
 /* --------------------------- */
 
 .crest-placeholder {
-  width: 82px;
-  height: 72px;
-  border-radius: 999px;
-  padding: 2px; /* space for gold ring */
+  width: 82px;                 /* Equal width/height = circle */
+  height: 82px;
+  border-radius: 50%;
+  padding: 2px;
 
-  background: radial-gradient(circle at 30% 30%, #ffffff, var(--accent-soft)),
-              linear-gradient(135deg, #f6e27a, #d4af37, #b88a31);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
+  background: radial-gradient(circle at 30% 30%, #ffffff, var(--accent-soft));
+  border: 3px solid #d4af37;   /* Gold ring */
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;            /* Ensures the circle stays clean */
 }
 
 .crest-placeholder img.crest-image {
-  width: 80px;
-  height: 80px;
+  width: 78px;                 /* Slightly smaller than container */
+  height: 78px;
   object-fit: contain;
   border-radius: 50%;
+  display: block;
 }
 
 /* --------------------------- */
