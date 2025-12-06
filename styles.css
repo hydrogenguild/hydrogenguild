@@ -96,8 +96,8 @@ html, body {
 }
 
 .crest-placeholder img.crest-image {
-  width: 78px;                 /* Slightly smaller than container */
-  height: 78px;
+  width: 80px;                 /* Slightly smaller than container */
+  height: 80px;
   object-fit: contain;
   border-radius: 10%;
   display: block;
