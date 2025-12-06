@@ -99,7 +99,7 @@ html, body {
   width: 78px;                 /* Slightly smaller than container */
   height: 78px;
   object-fit: contain;
-  border-radius: 50%;
+  border-radius: 10%;
   display: block;
 }
 
