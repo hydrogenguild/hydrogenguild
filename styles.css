@@ -90,14 +90,14 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-
   overflow: hidden;
 }
 
 .crest-placeholder img.crest-image {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;     /* fills the circle completely */
+  object-position: center;
   display: block;
 }
 
