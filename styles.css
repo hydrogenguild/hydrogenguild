@@ -76,30 +76,32 @@ html, body {
 }
 
 /* --------------------------- */
-/*     PERFECT CIRCLE CREST    */
+/*     SIMPLE LOGO VERSION     */
 /* --------------------------- */
 
 .crest-placeholder {
-  width: 82px;
-  height: 82px;
-  border-radius: 50%;
+  /* Strip out all the circle / border styling */
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0;
 
-  background: radial-gradient(circle at 30% 30%, #ffffff, var(--accent-soft));
-  border: 3px solid #d4af37;
+  background: none;
+  border: none;
+  border-radius: 0;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
+  display: inline-block;
+  overflow: visible;   /* let the PNG show naturally */
 }
 
 .crest-placeholder img.crest-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;     /* fills the circle completely */
-  object-position: center;
   display: block;
+  width: 100px;         /* tweak this size if you want it larger/smaller */
+  height: auto;        /* keep aspect ratio */
+  object-fit: contain; /* just in case */
+  border-radius: 0;    /* no extra rounding */
 }
+
 
 /* --------------------------- */
 
